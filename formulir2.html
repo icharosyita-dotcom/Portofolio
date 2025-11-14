@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Pendaftaaran Pasien<br>Klinik Rosyita</title>
+</head>
+<body>
+  <h1>Formulir Pendaftaran Pasien <br>Klinik Rosyita</h1>
+
+  <h2>Tabel Pasien</h2>
+  <table border="1" cellpadding="5" cellspacing="0">
+    <tr>
+      <th>Nama</th>
+      <td>_____________________</td>
+    </tr>
+    <tr>
+      <th>Alamat</th>
+      <td>_____________________</td>
+    </tr>
+    <tr>
+      <th>Keluhan</th>
+      <td>_____________________</td>
+    </tr>
+    <tr>
+      <th>Poli</th>
+      <td>_____________________</td>
+    </tr>
+  </table>
+  <h2>Formulir Pendaftaran Pasien</h2>
+  <form action="proses_pendaftaran.html" method="post">
+    <label for="nama">Nama Lengkap:</label><br>
+    <input type="text" id="nama" name="nama"><br><br>
+
+    <label for="email">NIK:</label><br>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="password">No.HP:</label><br>
+    <input type="password" id="password" name="password"><br><br>
+
+    <p>Jenis Kelamin:</p>
+    <input type="radio" id="laki" name="gender" value="Laki-laki">
+    <label for="laki">Laki-laki</label><br>
+    <input type="radio" id="perempuan" name="gender" value="Perempuan">
+    <label for="perempuan">Perempuan</label><br><br>
+
+    <label for="hobi">Poli:</label><br>
+    <select id="hobi" name="hobi">
+      <option value="READING">Gigi</option>
+      <option value="OR">Saraf</option>
+      <option value="SING">Orthopedi</option>
+      <option value="SING">Orologi</option>
+      <option value="SING">Kulit</option>
+      <option value="SING">Kandungan</option>
+    </select><br><br>
+
+    <button type="submit">Kirim Pendaftaran</button>
+  </form>
+
+  <h2>Video Tentang Makanan Sehat</h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/hMDJyb7VkYw?si=RB3v-PnpALR3W2Ta" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+
+  <p><a href="profile.html">Kembali ke Halaman Profil</a></p>
+</body>
+</html>

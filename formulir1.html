@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Perpustakaan Madiun</title>
+</head>
+<body>
+  <h1>Formulir Perpustakaan Madiun</h1>
+
+  <h2>Tabel Biodata</h2>
+  <table border="1" cellpadding="5" cellspacing="0">
+    <tr>
+      <th>Nama</th>
+      <td>_____________________</td>
+    </tr>
+    <tr>
+      <th>NIM</th>
+      <td>_____________________</td>
+    </tr>
+    <tr>
+      <th>Jurusan</th>
+      <td>_____________________</td>
+    </tr>
+    <tr>
+      <th>Email</th>
+      <td>_____________________</td>
+    </tr>
+  </table>
+  <h2>Formulir Pendaftaran Anggota Perpustakaan</h2>
+  <form action="proses_pendaftaran.html" method="post">
+    <label for="nama">Nama Lengkap:</label><br>
+    <input type="text" id="nama" name="nama"><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"><br><br>
+
+    <p>Jenis Kelamin:</p>
+    <input type="radio" id="laki" name="gender" value="Laki-laki">
+    <label for="laki">Laki-laki</label><br>
+    <input type="radio" id="perempuan" name="gender" value="Perempuan">
+    <label for="perempuan">Perempuan</label><br><br>
+
+    <label for="hobi">Pilih Hobi:</label><br>
+    <select id="hobi" name="hobi">
+      <option value="READING">Membaca</option>
+      <option value="OR">Olahraga</option>
+      <option value="SING">Musik</option>
+    </select><br><br>
+
+    <button type="submit">Kirim Pendaftaran</button>
+  </form>
+
+  <h2>Video Tentang Teknologi/Web Development</h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/hMDJyb7VkYw?si=RB3v-PnpALR3W2Ta" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+
+  <p><a href="profile.html">Kembali ke Halaman Profil</a></p>
+</body>
+</html>
