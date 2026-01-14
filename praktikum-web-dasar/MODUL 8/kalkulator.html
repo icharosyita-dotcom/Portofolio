@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator Sederhana</title>
+</head>
+<body>
+    <h3>Kalkulator Sederhana</h3>
+    <input type="number" id="bil1" placeholder="Bil 1">
+    <input type="number" id="bil2" placeholder="Bil 2">
+    <br><br>
+    <button onclick="hitung('+')">+</button>
+    <button onclick="hitung('-')">-</button>
+    <button onclick="hitung('*')">x</button>
+    <button onclick="hitung('/')">/</button>
+    <br><br>
+    <label>Hasil:</label>
+    <input type="text" id="hasil" readonly>
+
+    <script>
+        function hitung(operator) {
+            let a = parseFloat(document.getElementById('bil1').value);
+            let b = parseFloat(document.getElementById('bil2').value);
+            let res;
+
+            if (isNaN(a) || isNaN(b)) {
+                alert('Masukkan angka pada Bil 1 dan Bil 2');
+                return;
+            }
+
+            switch(operator) {
+                case '+': res = a + b; break;
+                case '-': res = a - b; break;
+                case '*': res = a * b; break;
+                case '/': 
+                    if (b === 0) {
+                        alert('Tidak bisa membagi dengan 0');
+                        return;
+                    }
+                    res = a / b; 
+                    break;
+            }
+
+            document.getElementById('hasil').value = res;
+        }
+    </script>
+</body>
+</html>
